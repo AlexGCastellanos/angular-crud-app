@@ -6,11 +6,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map, catchError } from 'rxjs';
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Injectable()
 export class ClienteService {
 
-  private urlEndPoint: string = 'https://spring-boot-backend-apirest.herokuapp.com/api/clientes';
+  private urlEndPoint: string = environment.baseUrl;
 
   private httpHeaders = new HttpHeaders({ 'Content-Type': 'application/json' });
 
