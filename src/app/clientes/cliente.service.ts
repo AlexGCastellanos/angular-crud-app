@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment';
 @Injectable()
 export class ClienteService {
 
-  private urlEndPoint: string = environment.baseUrl+"/api/clientes";
+  private urlEndPoint: string = environment.baseUrl;
 
   private httpHeaders = new HttpHeaders({ 'Content-Type': 'application/json' });
 
